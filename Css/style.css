@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+/********************************* Navbar style *********************************/
+#navbar{
+    display: flex;
+    background: #FFFFFF;
+    justify-content: space-between;
+    padding: 0.25rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#navbar .n-head{
+    color: #0A3463;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 1.2rem 0;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+#navbar ul li{
+    font-size: 1.1rem;
+    display: inline-block;
+    margin: 1.2rem 0;
+}
+#navbar ul li a{
+    color: #0F256B;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 1.2rem;
+    padding: 0.50rem;
+}
+#navbar ul li a:hover{
+    background: #0AC5EC;
+    border-radius: 7px;
+    color: white;
+    /* transition: 0.4s; */
+}
+/********************************* Main info style *********************************/
+#home{
+    background: #333 url(/images/barbell-squat-legs-crossfit.jpg) no-repeat center center/cover;
+    margin-top: -65px;
+    height: 100vh;
+}
+#home .home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+#home .home-content p{
+    color: white;
+    font-size: 2rem;
+    margin: 2.5rem;
+}
+#home .home-content .h-header{
+    color: #fff;
+    padding-bottom: 1.2rem;
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 3px 4px 5px #000;
+}
+#home .home-content a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #0AC5EC;
+    border-radius: 5px;
+    padding: 0.65rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: transform 0.5s;
+}
+#home .home-content a:hover{
+    transform: scale(1.1);
+}
+#workouts{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+.text-work{
+    margin: 30px 0;
+    font-size: 4rem;
+    color: #0A3463;
+    text-transform: uppercase;
+}
+
+#workouts .container{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#workouts .container #box-1{
+    flex-basis: 400px;
+    height: 300px;
+    margin: 20px;
+    background: url(/images/CHEST-WORKOUT.jpg) no-repeat center center/cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#workouts .container #box-2{
+    flex-basis: 400px;
+    height: 300px;
+    margin: 20px;
+    background: url(/images/BACK-WORKOUT.jpg) no-repeat center center/cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#workouts .container #box-3{
+    flex-basis: 400px;
+    height: 300px;
+    margin: 20px;
+    background: url(/images/SHOULDER-WORKOUT.jpg) no-repeat center center/cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#workouts .container #box-4{
+    flex-basis: 400px;
+    height: 300px;
+    margin: 20px;
+    background: url(/images/LEG-WORKOUT.jpg) no-repeat center center/cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#workouts .container #box-5{
+    flex-basis: 400px;
+    height: 300px;
+    margin: 20px;
+    background: url(/images/ARMS-WORKOUT.jpg) no-repeat center center/cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#workouts .container #box-6{
+    flex-basis: 400px;
+    height: 300px;
+    margin: 20px;
+    background: url(/images/from-no-pack-to-six-pack-abs.jpg) no-repeat center center/cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#workouts .container .box a{
+    text-decoration: none;
+    position: relative;
+    top:45%;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 3px 4px 5px #000;
+}
+
+/********************************* Plans and Supplements style *********************************/
+#plans{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.container2{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.container2 .cards{
+    flex-basis: 310px;
+    margin: 10px 10px;
+}
+.cards-heading{
+    color: #0AC5EC;
+    font-size: 1.7rem;
+    padding: 0.75rem 0;
+    text-transform: uppercase;
+}
+.container2 .cards .inner-cards{
+    width: 100%;
+    background: #0F256B;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.container2 .inner-cards img{
+    width: 100%;
+    /* margin-bottom: 20px; */
+}
+.container2 .inner-cards p{
+    color: white;
+    padding: 15px;
+}
+.cards a{
+    display: inline-block;
+    margin: 20px;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #0F256B;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+.cards a:hover{
+    background-color: #0AC5EC;
+    color: #0F256B;
+}
+#plans #plans-text-primary{
+    margin: 20px;
+    font-size: 20px;
+    color: #0F256B;
+}
+/********************************* Utilities style *********************************/
+#utilities{
+    text-align: center;
+}
+#utilities h1{
+    text-align: center;
+    margin: 20px 0px 50px 0px;
+    color: white;
+    font-size: 4rem;
+    color: #0A3463;
+    text-transform: uppercase;
+}
+#utilities .bmi-division{
+    background: #0A3463;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+    padding: 30px;
+    height: 400px;
+    padding: 150px 0;    
+}
+#utilities .bmi-division h2{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom:  30px;
+}
+#utilities .bmi-division #BMI-form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+#utilities .bmi-division #BMI-form input{
+    display: inline-block;
+    margin: 0 20px;
+    width: 15%;
+}
+#utilities .bmi-division #BMI-form .input-numbers{
+    padding: 15px 10px;
+    border: 0.5px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+}
+#utilities .bmi-division #BMI-form .input-numbers::placeholder{
+    color: white;
+}
+#utilities .bmi-division #BMI-form .submit{
+    color: #0A3463;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: white;
+    transition: 0.3s;
+}
+#utilities .bmi-division #BMI-form .submit:hover{
+    background-color: transparent;
+    border: 0.5px solid white;
+    color: white;
+}
+#utilities .bmi-division #result{
+    font-size: 20px;
+}
+/********************************* Contact style *********************************/
+#contact{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact .form{
+    width: 65%;
+    display: flex;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#contact .form .form-picture{
+    background: black;
+    flex:1;
+}
+#contact .form .input-form{
+    flex: 1;
+    padding: 30px;
+}
+.form .input-form .text-input::placeholder{
+    color: #0F256B;
+}
+#contact .form .input-form .text-input{
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    outline: 0;
+    font-size: 1.1rem;
+    background: transparent;
+    border-bottom: 1px solid #DCDCDC;
+}
+#contact .form .input-form .text-input:hover{
+    border-bottom: 1px solid #0AC5EC;
+    color: #0AC5EC;
+}
+#contact .form .form-picture .left-div-pic{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+#contact h1{
+    text-align: center;
+    margin: 20px 0px 50px 0px;
+    color: white;
+    font-size: 4rem;
+    color: #0A3463;
+    text-transform: uppercase;
+}
+#contact .input-form h2{
+    font-weight: bold;
+    color: #0AC5EC;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+#contact .input-form label{
+    display: block;
+    margin: 0 0 0px 0;
+}
+#contact .input-form .buttons-re-sub{
+    text-align: center;
+}
+#contact .input-form .btn-forms{
+    text-align: center;
+    color: white;
+    padding: 8px;
+    font-size: 0.8rem;
+    background-color: gray;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    width: 25%;
+    margin: 20px 20px 0 20px;
+    text-transform: uppercase;
+    background-color: #0AC5EC;
+}
+#contact .input-form .btn-forms:hover{
+    transform: scale(1.1);
+}
+.form .form-picture h2, p{
+    color: white;
+}
+.form .input-form #input-message{
+    resize: none;
+}
+/********************************* Footer style *********************************/
+/* First Footer Styling */
+#first-footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: url(/images/footer-image.jpg) no-repeat center center/cover;
+}
+#first-footer h1{
+    font-weight: bold;
+    color: #0AC5EC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+/* All three divs */
+.footer-item-one, .footer-item-two, .footer-item-three{
+    background-color: rgb(15,37,107, 0.6);
+    flex: 1;
+    text-align: center;
+    padding: 70px;
+    color: white;
+}
+.footer-item-one p{
+    font-size: 20px;
+    line-height: 1.5rem;
+}
+.footer-item-two .footer-list-items{
+    list-style: none;
+}
+.footer-item-two .footer-list-items a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+.footer-item-two .footer-list-items a:hover{
+    color: #0AC5EC;
+    transform: scale(1.1);
+}
+.footer-item-three .flex-icon{
+    display: flex;
+    flex-direction: column;
+}
+.footer-item-three a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+.footer-item-three a:hover{
+    transform: scale(1.2);
+}
+/* Second Footer Styling */
+#second-footer{
+    background-color: rgb(2, 15, 56);
+    padding: 30px 0;
+}
+#second-footer .copyright-info{
+    text-align: center;
+}
+#second-footer .copyright-info p{
+    color: rgb(182, 178, 178);
+}

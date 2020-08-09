@@ -1,0 +1,211 @@
+<!-- 
+    Student: Asad Jawaid
+    Student number: 104969683
+    Due Date: April 10, 2020
+    Topic: Imagine Fitness
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <!-- For font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- For icons -->
+    <script src="https://kit.fontawesome.com/cd94810589.js" crossorigin="anonymous"></script>
+    <!-- Javascript function to calculate the BMI -->
+    <script>
+        function bmi () {
+            var height = Number(document.getElementById("height").value);
+            var weight = Number(document.getElementById("weight").value);
+            var result = weight / (height * height);
+            document.getElementById("result").innerHTML = "Your bmi score is : " + result;
+        }  
+    </script>
+    <title>Imagine Fitness | Achieve Your Fitness Goals!</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a class="n-head" href="index.html">Imagine <span style="color: #456185;">Fitness</span></a>
+        <ul class="n-ul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#workouts">Workouts</a></li>
+            <li><a href="#plans">Plans</a></li>
+            <li><a href="#utilities">Utilities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 1. Header: Showcase -->
+    <header id="home">
+        <!-- Flex container -->
+        <div class="home-content">
+            <p>achive your fitness goals today with</p>
+            <h1 class="h-header">IMAGINE <span style="color: #0AC5EC;">FITNESS</span></h1>
+            <a href="#workouts">Start your fitness journey today</a>
+        </div>
+    </header>
+
+    <!-- 2. Section: Workouts -->
+    <section id="workouts">
+        <h1 class="text-work">Workouts</h1>
+        <div class="container">
+            <div class="box" id="box-1">
+                <a href="https://www.bodybuilding.com/content/10-best-chest-exercises-for-building-muscle.html" target="_blank">CHEST</a>
+            </div>
+            <div class="box" id="box-2">
+                <a href="https://barbend.com/best-back-exercises/" target="_blank">BACK</a>
+            </div>
+            <div class="box" id="box-3">
+                <a href="https://manofmany.com/lifestyle/fitness/best-shoulder-exercies-for-men" target="_blank">SHOULDERS</a>
+            </div>
+            <div class="box" id="box-4">
+                <a href="https://www.mensjournal.com/health-fitness/30-best-legs-exercises-all-time/" target="_blank">LEGS</a>
+            </div>
+            <div class="box" id="box-5">
+                <a href="https://www.gymshark.com/blogs/news/the-six-best-arm-exercises" target="_blank">ARMS</a>
+            </div>
+            <div class="box" id="box-6">
+                <a href="https://www.mensjournal.com/health-fitness/the-30-best-abs-exercises-of-all-time/" target="_blank">ABS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Section: Plans and Supplements -->
+    <section id="plans">
+        <h1 class="text-work">Plans & Supplements</h1>
+        <p id="plans-text-primary">Below you will find the best diet plans and supplements to help you get one step closer to your fitness goals.</p>
+        <!-- Flex Container -->
+        <div class="container2">
+            <!-- Card 1 -->
+            <div class="cards">
+                <h3 class="cards-heading">Supplements</h3>
+                <div class="inner-cards">
+                    <div class="images-1">
+                        <img src="/images/xweight-lifting-supplements.jpg.pagespeed.ic_.EBtn-uLyyO-1.jpg" alt="Supplements to take.">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quae est sapiente sit incidunt voluptates vero obcaecati? Laudantium voluptatum voluptatem dicta magnam, aspernatur tenetur! At ipsa voluptatem impedit exercitationem aliquid.</p>
+                </div>
+                <a href="https://www.coachmag.co.uk/nutrition/supplements/3910/the-7-best-supplements-to-support-your-training" target="_blank">Learn More</a>
+            </div> 
+            <!-- Card 2 -->
+            <div class="cards">
+                <h3 class="cards-heading">Bulk Diet</h3>
+                <div class="inner-cards">
+                    <div class="images-2">
+                        <img src="/images/How_To_Gain_Weight_For_Bulking_-_Ohio_Fitness_Garage_1200x1200.jpg" alt="Best foods to consume when following a bulk diet.">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quae est sapiente sit incidunt voluptates vero obcaecati? Laudantium voluptatum voluptatem dicta magnam, aspernatur tenetur! At ipsa voluptatem impedit exercitationem aliquid.</p>
+                </div>
+                <a href="https://www.healthline.com/nutrition/bodybuilding-meal-plan" target="_blank">Learn More</a>
+            </div> 
+            <!-- Card 3 -->
+            <div class="cards">
+                <h3 class="cards-heading">Lean Diet</h3>
+                <div class="inner-cards">
+                    <div class="images-3">
+                        <img src="/images/eat-cleaning4.jpg" alt="Foods to consume when following a lean diet.">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quae est sapiente sit incidunt voluptates vero obcaecati? Laudantium voluptatum voluptatem dicta magnam, aspernatur tenetur! At ipsa voluptatem impedit exercitationem aliquid.</p>
+                </div>
+                <a href="https://www.healthline.com/nutrition/cutting-diet" target="_blank">Learn More</a>
+            </div> 
+            <!-- Card 4 -->
+            <div class="cards">
+                <h3 class="cards-heading">Weight Loss</h3>
+                <div class="inner-cards">
+                    <div class="images-4">
+                        <img src="/images/weight_loss_diet.jpg" alt="Foods to consume when following a weight loss diet.">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quae est sapiente sit incidunt voluptates vero obcaecati? Laudantium voluptatum voluptatem dicta magnam, aspernatur tenetur! At ipsa voluptatem impedit exercitationem aliquid.</p>
+                </div>
+                <a href="https://www.healthline.com/nutrition/how-to-lose-weight-as-fast-as-possible#section1" target="_blank">Learn More</a>
+            </div>           
+        </div>
+    </section>
+
+    <!-- 4. Section: Utilities -->
+    <section id="utilities">
+        <h1>Utilities</h1>
+        <div class="bmi-division">
+            <h2>Calculate Your Body Mass Index</h2>
+            <!-- flex container -->
+            <form id="BMI-form">
+                <input class="input-numbers" id="weight" type="text" placeholder="Your Weight(kg)"/>
+                <input class="input-numbers" id="height" type="text" placeholder="Your Height(m)"/>
+                <input class = "submit" type="button"  value="CALCULATE YOUR BMI" onclick="bmi()" />
+            </form>
+            <p id="result"></p>
+        </div>
+        
+    </section>
+
+    <!-- 5. Section: Contact form -->
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <div class="form">
+            <div class="form-picture">
+                <img class="left-div-pic" src="/images/form-picture.jpg" alt="After Workout">
+            </div>
+            <!-- Input Form -->
+            <div class="input-form">
+                <form>
+                    <h2>Send us a message.</h2>
+                    <input class="text-input" type="text" id="input-name" name="input-name" required placeholder="*Full Name"><br>
+                    <input class="text-input" type="email" id="input-email" name="input-email" required placeholder="*Email"><br>
+                    <input class="text-input" type="age" id="input-age" name="input-age" placeholder="Age"><br>
+                    <input class="text-input" type="text" id="input-subject" name="input-subject" required placeholder="*Subject"><br>
+                    <textarea class="text-input" id="input-message" rows="6" cols="50" required placeholder="Write your message here."></textarea>
+                        </textarea><br>
+                    <div class="buttons-re-sub">
+                        <input class="btn-forms" id="reset-btn" type="reset" value="Reset">
+                        <input class="btn-forms" id="submit-btn" type="submit" value="Send Message">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 6. Footer -->
+    <footer>
+        <!-- Flex container for first footer -->
+        <section id="first-footer">
+            <!-- Flex items for first footer -->
+            <!-- Item #1 -->
+            <div class="footer-item-one">
+                <h1>About Imagine Fitness</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa recusandae alias voluptas quas perspiciatis nisi consequatur veritatis illo! Veniam, aspernatur repellendus! Corporis cupiditate incidunt praesentium eius ex dolor consequuntur?</p>    
+            </div>
+            <!-- Item #2 -->
+            <div class="footer-item-two">
+                <h1>Links</h1>
+                <ul>
+                    <li class="footer-list-items"><a href="#home">Home</a></li>
+                    <li class="footer-list-items"><a href="#workouts">Workouts</a></li>
+                    <li class="footer-list-items"><a href="#plans">Plans</a></li>
+                    <li class="footer-list-items"><a href="#utilities">Utilities</a></li>
+                    <li class="footer-list-items"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Item #3 -->
+            <div class="footer-item-three">
+                <h1>Follow me</h1>
+                <!-- Flex container -->
+                <div class="flex-icon">
+                    <a href="https://www.instagram.com/asadjawaid_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/asadjawaid" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/asadjawaid_" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="second-footer">
+            <div class="copyright-info">
+                <p>Copyright &copy; 2020 All rights reserved | Created by Asad Jawaid</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
